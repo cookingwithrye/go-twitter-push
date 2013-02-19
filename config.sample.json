@@ -1,0 +1,13 @@
+{
+    "PushoverAPIKey": "XXXXXXX",
+    "PushoverUser": "XXXXXXXX",
+    "TwitterConsumerKey": "XXXXXXXXX",
+    "TwitterConsumerSecret": "XXXXXXX",
+
+    "Patterns": [
+        {"From": "*", "MatchText": "jdiezlopez"}
+    ],
+
+    "NotificationTitle": "twitter alert",
+    "NotificationBody": "from @{{.User.Screen_name}}:\n {{.Text}}"
+}
