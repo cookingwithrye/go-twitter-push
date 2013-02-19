@@ -54,6 +54,7 @@ func main() {
 				if p.MatchText == "*" || strings.Contains(tw.Text, p.MatchText) {
 					NotificationTemplate.Execute(&buf, tw)
 					Notify(buf.String())
+					buf.Reset()
 				}
 			}
 		}
