@@ -49,7 +49,6 @@ func main() {
 
 	var buf bytes.Buffer
 	for tw := range tweets {
-		fmt.Println(tw)
 		for _, p := range Config.Patterns {
 			if p.From == "*" || p.From == tw.User.Screen_name {
 				if p.MatchText == "*" || strings.Contains(tw.Text, p.MatchText) {
